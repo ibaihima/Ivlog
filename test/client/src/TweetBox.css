@@ -1,0 +1,36 @@
+.tweetBox {
+flex: 0.5;
+/* margin-left: 20px; */
+font-size: 40px;
+border: none;
+/* padding-bottom:10px; */
+}
+
+.tweetBox > form{
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 30%; */
+    
+    
+}
+
+.tweetSearch > input{
+    border: none;
+    border-radius: 5px;
+    font-size: 40px
+}
+
+.button {
+    border: none;
+    width: 30%;
+    border-radius: 5px;
+    font-size: 20px;
+    /* margin-left: auto */
+}
+
+.tweetImage > input{
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    /* margin-bottom: ; */
+}

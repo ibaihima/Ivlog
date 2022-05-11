@@ -1,0 +1,22 @@
+.homepage{
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width:none;
+}
+
+.home{
+    display: flex;
+}
+.homepage::-webkit-scrollbar{
+    display: none
+}
+
+.homepageHeader {
+    position: sticky;
+    top:0 ;
+    background-color: rgb(160, 86, 86);
+    z-index: 100;
+    padding: 15px 20px;
+}
+
