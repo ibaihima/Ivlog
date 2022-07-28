@@ -5,19 +5,21 @@ import TweetBox from './TweetBox'
 import React from 'react';
 import Card from './Card'
 import Sidebar from './Sidebar'
+import Twitter from './Twitter'
 
 function HomePage({user}){
 
     return(
     <div className="homepage">
-        <div className="homepageHeader">
+        {/* <div className="homepageHeader">
             <h1>
                 Home
             </h1>
-        </div>
+        </div> */}
         <div className= 'home'>
         <Sidebar />
         <TweetBox user= {user} />
+        <Twitter />
         </div>
     </div>
     )

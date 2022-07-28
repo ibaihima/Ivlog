@@ -17,7 +17,9 @@ function Header({ user, setUser }) {
   return (
     <div className="header">
       <div className="logo"></div>
+      <Link to="/home">
          <h1 className="font">Ivlog</h1>
+      </Link>
       <div className="rightSide">
         {user ? (
           <div className ='login-buttton'>

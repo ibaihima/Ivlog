@@ -1,0 +1,11 @@
+.profile-card{
+    width: 70%;
+    height: 600px ;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.loginBody{
+    border: black solid;
+    
+}

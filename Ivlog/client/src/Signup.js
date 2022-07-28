@@ -19,7 +19,7 @@ function Signup({onSignup, setCurrentUser}) {
             lastName
         }
         e.preventDefault();
-        fetch("/users", {
+        fetch("/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

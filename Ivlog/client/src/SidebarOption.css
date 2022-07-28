@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 30%
-
+    padding: 30%;
 }
 
 .sidebarOptions > h2 {
