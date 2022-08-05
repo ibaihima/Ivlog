@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router-dom';
+import {NavLink, useNavigate} from 'react-router-dom';
 import {useState} from  'react'
 import React from 'react';
 
@@ -9,6 +9,7 @@ function Signup({onSignup, setCurrentUser}) {
     const [password, setPassword] = useState("");
     const [firstName, setFirstname] = useState("");
     const [lastName, setLastname] = useState("");
+    const navigate = useNavigate()
 
     // setting up username 
     function handleSubmit(e) {
@@ -29,6 +30,7 @@ function Signup({onSignup, setCurrentUser}) {
           .then((r) => {
               if (r.ok){
                   r.json().then(setCurrentUser)
+                  navigate('/login')
               }
           })
       }
@@ -58,7 +60,7 @@ function Signup({onSignup, setCurrentUser}) {
                         value={firstName}
                         onChange={(e) => setFirstname(e.target.value)}
                         />
-                      <label className="form-label" for="typePasswordX">Username</label>
+                      <label className="form-label" for="typePasswordX">Firstname</label>
                     </div>
                     <div className="form-outline form-white mb-4">
                       <input 
@@ -91,7 +93,7 @@ function Signup({onSignup, setCurrentUser}) {
                       <label className="form-label" for="typePasswordX">Password</label>
                     </div>
 
-                   <button className="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                   <button className="btn btn-outline-light btn-lg px-5" type="submit">Signup</button>
                    </form>
                   </div>     
                   
