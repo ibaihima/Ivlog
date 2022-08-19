@@ -36,7 +36,7 @@ function Profile() {
            posts.slice(0).reverse().map((item) => {
              console.log(item)
              return(
-              <Card  user={postUser} text={item.content} image={item.feed}  />
+              <Card button={"x"} user={postUser} text={item.content} image={item.feed}  />
              )})
         }
         </div>

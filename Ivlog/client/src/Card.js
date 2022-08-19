@@ -3,7 +3,7 @@ import Comment from './Comment';
 import './Card.css'
 import {useState, useEffect} from 'react'
 
-function Card({user, image, text,}){
+function Card({user, image, text, button}){
     const [card, savedCards] = useState([])
     const [favorites, savedFavorites] = useState([])
 
@@ -49,6 +49,7 @@ function Card({user, image, text,}){
             <div className="card-header"> 
                 <h1>{user.firstName} {user.lastName} </h1>
                 <h1>@{user.username}</h1>
+                <button className="profilebttn">{button}</button>
             </div>
             <div className="card-body">
                 <div className="card-text">
