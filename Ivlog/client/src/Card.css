@@ -9,5 +9,12 @@
 }
 .profilebttn{
     border: none;
-    align-text: center;
+    display: flex;
+    flex-direction: column;
+    color: red;
+    margin-left: 10%
+}
+
+.card-header{
+    display:flex;
 }

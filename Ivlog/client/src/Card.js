@@ -48,8 +48,10 @@ function Card({user, image, text, button}){
         <div className="card"> 
             <div className="card-header"> 
                 <h1>{user.firstName} {user.lastName} </h1>
-                <h1>@{user.username}</h1>
                 <button className="profilebttn">{button}</button>
+            </div>
+            <div>
+            <h1>@{user.username}</h1>
             </div>
             <div className="card-body">
                 <div className="card-text">
