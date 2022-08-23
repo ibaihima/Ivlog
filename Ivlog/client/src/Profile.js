@@ -28,6 +28,18 @@ function Profile() {
               }, [])
             console.log(postUser)
 
+            function handleDelete(clickedPost){
+              console.log(clickedPost)
+              // fetch(`/post/${clickedPost.id}`,{
+              //   method:"DELETE",
+              // }).then (()=>{
+              //   setPosts(posts.filter(el=> {
+              //     console.log("after delete", posts)
+              //     // return (el.id !==clickedPost.id)
+              //   }))       
+              // })
+            }
+
   return (
     <div>
 
@@ -36,7 +48,7 @@ function Profile() {
            posts.slice(0).reverse().map((item) => {
              console.log(item)
              return(
-              <Card button={"x"} user={postUser} text={item.content} image={item.feed}  />
+              <Card deletePost={handleDelete} button={"x"} user={postUser} text={item.content} image={item.feed}  />
              )})
         }
         </div>
