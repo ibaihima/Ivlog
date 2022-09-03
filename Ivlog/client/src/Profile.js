@@ -29,15 +29,15 @@ function Profile() {
             console.log(postUser)
 
             function handleDelete(clickedPost){
-              console.log(clickedPost)
-              // fetch(`/post/${clickedPost.id}`,{
-              //   method:"DELETE",
-              // }).then (()=>{
-              //   setPosts(posts.filter(el=> {
-              //     console.log("after delete", posts)
-              //     // return (el.id !==clickedPost.id)
-              //   }))       
-              // })
+              console.log(clickedPost.id)
+              fetch(`/post/${clickedPost.id}`,{
+                method:"DELETE",
+              }).then (()=>{
+                setPosts(posts.filter(el=> {
+                  console.log("after delete", posts)
+                  return (el.id !==clickedPost.id)
+                }))       
+              })
             }
 
   return (
