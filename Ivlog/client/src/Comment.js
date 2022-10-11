@@ -41,7 +41,7 @@ console.log(user.id)
         <span onClick={handleClick} className="material-symbols-outlined">
           favorite
         </span>
-
+        
         <span className="material-symbols-outlined">
           comment
         </span>
