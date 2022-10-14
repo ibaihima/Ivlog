@@ -13,7 +13,7 @@
 o
 .sidebarOptions:hover{
     background-color: lightblue;
-    border-radius: 20px;
+    border-radius: 30px;
     color: white;
     transition: color 300ms ease-out;
 }
